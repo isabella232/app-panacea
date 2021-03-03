@@ -25,12 +25,12 @@ MY_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 include $(BOLOS_SDK)/Makefile.defines
 
 # Main app configuration
-APPNAME = "Cosmos"
+APPNAME = "Panacea"
 APPVERSION_M=2
 APPVERSION_N=18
 APPVERSION_P=0
 
-APPPATH = "44'/118'"
+APPPATH = "44'/371'"
 APP_LOAD_PARAMS = --appFlags 0x200 --delete $(COMMON_LOAD_PARAMS) --path $(APPPATH)
 
 ifeq ($(TARGET_NAME),TARGET_NANOS)
@@ -174,4 +174,4 @@ delete:
 	python -m ledgerblue.deleteApp $(COMMON_DELETE_PARAMS)
 
 listvariants:
-	@echo VARIANTS COIN cosmos
+	@echo VARIANTS COIN panacea
