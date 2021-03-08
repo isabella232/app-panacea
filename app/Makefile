@@ -26,9 +26,9 @@ include $(BOLOS_SDK)/Makefile.defines
 
 # Main app configuration
 APPNAME = "Panacea"
-APPVERSION_M=2
-APPVERSION_N=18
-APPVERSION_P=0
+APPVERSION_M=0
+APPVERSION_N=0
+APPVERSION_P=1
 
 APPPATH = "44'/371'"
 APP_LOAD_PARAMS = --appFlags 0x200 --delete $(COMMON_LOAD_PARAMS) --path $(APPPATH)
